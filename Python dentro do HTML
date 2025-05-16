@@ -1,0 +1,4 @@
+<!-- Python dentro do HTML
+{% if user.is_authenticated == True %}
+    Bem-vindo!
+{% endif %}
