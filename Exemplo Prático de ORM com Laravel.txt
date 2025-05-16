@@ -1,0 +1,5 @@
+// Controller
+public function buscarUsuarios() {
+    $usuarios = Usuario::all; 
+    return view('usuarios', ['usuarios' => $usuarios])
+}
