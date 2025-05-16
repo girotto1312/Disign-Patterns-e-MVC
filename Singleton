@@ -1,0 +1,18 @@
+class Conexao {
+    private static $instancia;
+
+    public function __construct() {
+      
+        echo "Conectado!";
+    }
+
+    public static function getInstancia() {
+        if (!isset(self::$instancia)) {
+            self::$instancia = new Conexao();
+        }
+        return self::$instancia;
+    }
+}
+
+$con1 = new Conexao(); 
+$con2 = Conexao::getInstancia();
