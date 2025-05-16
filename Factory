@@ -1,0 +1,12 @@
+class AnimalFactory {
+    public static function criar($tipo) {
+        if ($tipo = "cachorro") { 
+            return new Cachorro();
+        } else if ($tipo == "gato") {
+            return new Gato();
+        }
+        
+    }
+}
+
+$meuAnimal = AnimalFactory::criar("cachorro");
